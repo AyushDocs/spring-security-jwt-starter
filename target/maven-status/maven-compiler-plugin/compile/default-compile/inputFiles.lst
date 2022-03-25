@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\utils\JwtUtils.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\configuration\Beans.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\models\User.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\dto\UserDto.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\exceptions\UserNotFoundException.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\models\CustomUserDetails.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\services\UserService.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\repositories\UserRepository.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\configuration\JwtFilter.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\configuration\SecurityConfig.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\controllers\UserController.java
+C:\Users\user\Desktop\code\whatsapp-clone-microservices\profile_service\src\main\java\com\example\manage_tasks\ManageTasksApplication.java
