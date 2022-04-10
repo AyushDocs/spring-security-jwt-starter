@@ -1,5 +1,6 @@
 package com.auth.react.services;
 
+import com.auth.react.dto.LoginRequest;
 import com.auth.react.dto.SignupRequest;
 import com.auth.react.exceptions.UserAlreadyExistsException;
 import com.auth.react.models.User;
@@ -26,5 +27,9 @@ public class UserService {
                   .build();
           userRepository.save(user);
       }
+
+    public String login(LoginRequest loginRequest) {
+        return null;
+    }
 
 }

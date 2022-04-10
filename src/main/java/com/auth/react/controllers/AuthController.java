@@ -2,9 +2,11 @@ package com.auth.react.controllers;
 
 import javax.validation.Valid;
 
+import com.auth.react.dto.LoginRequest;
 import com.auth.react.dto.SignupRequest;
 import com.auth.react.services.UserService;
 
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
@@ -21,9 +23,17 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api/v1/users")
 public class AuthController {
       private final UserService userService;
-      @PostMapping("signup")
+
+      @PostMapping("/signup")
       @ResponseStatus(HttpStatus.CREATED)
-      public void signup(@RequestBody @Valid SignupRequest signupRequest){
+      public void signup(@RequestBody @Valid SignupRequest signupRequest) {
             userService.signup(signupRequest);
+      }
+
+      @PostMapping("/login")
+      public ResponseEntity<Void> login(@RequestBody @Valid LoginRequest loginRequest) {
+            String jwt = userService.login(loginRequest);
+            ResponseCookie responseCookie=ResponseCookie.from("token", jwt).httpOnly(true).secure(true).build();
+            return ResponseEntity.ok().header(HttpHeaders.SET_COOKIE, responseCookie.toString()).build();
       }
 }
